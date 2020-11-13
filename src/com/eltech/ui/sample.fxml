@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:controller="com.eltech.ui.Controller" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+      <children>
+         <ListView fx:id="itemListView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0" />
+          <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="150.0" prefWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <Button prefHeight="25.0" prefWidth="145.0" onMouseClicked="#addTriangle" text="Add Triangle">
+               <VBox.margin>
+                  <Insets top="2.5" />
+               </VBox.margin>
+            </Button>
+            <Button prefHeight="25.0" prefWidth="145.0" onMouseClicked="#addCircle" text="Add Circle">
+               <VBox.margin>
+                  <Insets top="2.5" />
+               </VBox.margin>
+            </Button>
+              <Button prefHeight="25.0" prefWidth="145.0" onMouseClicked="#addRectangle" text="Add Rectangle">
+                  <VBox.margin>
+                      <Insets top="2.5" />
+                  </VBox.margin>
+              </Button>
+            <Button prefHeight="25.0" prefWidth="145.0" onMouseClicked="#addRandomShape" text="Add Random Shape">
+               <VBox.margin>
+                  <Insets top="2.5" />
+               </VBox.margin>
+            </Button>
+            <Button prefHeight="25.0" prefWidth="145.0" onMouseClicked="#deleteSelectedShape" text="Delete Selected">
+               <VBox.margin>
+                  <Insets top="2.5" />
+               </VBox.margin>
+            </Button>
+          </VBox>
+      </children>
+   </AnchorPane>
+</HBox>
